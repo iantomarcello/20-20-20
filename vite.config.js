@@ -6,5 +6,8 @@ export default defineConfig({
   server: {
     port: 2020,
   },
+  build: {
+    outDir: 'gh-pages',
+  },
   plugins: [svelte()]
 })
