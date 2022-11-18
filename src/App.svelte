@@ -23,6 +23,7 @@
   function stop() {
     swPostMessage('stop');
     state = 0;
+    time = 60 * 20;
   }
 
   /**
@@ -53,14 +54,12 @@
 
 <main class="bg-emerald-900 text-emerald-100">
 
-  <div class="w-screen h-screen flex items-center justify-center gap-4 flex-col">
+  <div class="w-screen h-screen flex items-center justify-center items-center  gap-4 sm:gap-8 sm:flex-col">
     {#if state === -1}
       <p>Access required. Please allow access</p>
     {/if}
     {#if state > -1}
-      <div class="mb-8">
-        <Counter time={time}/>
-      </div>
+    <Counter time={time}/>
       {#if state === 0}
         <IconButton click={start}>
           <svg class="w-full h-full block hover:fill-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
