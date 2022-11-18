@@ -1,0 +1,27 @@
+{
+  "short_name": "20-20-20",
+  "name": "20-20-20 Rule",
+  "icons": [
+    {
+      "src": "/20-20-20.svg",
+      "type": "image/svg+xml",
+      "sizes": "144x144"
+    }
+  ],
+  "id": "20-20-20",
+  "start_url": "/",
+  "background_color": "#044e09",
+  "display": "minimal-ui",
+  "scope": "/",
+  "theme_color": "#04740d",
+  "shortcuts": [
+    {
+      "name": "Start Timer",
+      "short_name": "Start",
+      "description": "Start the timer for 20 minutes",
+      "url": "/start",
+      "icons": [{ "src": "/20-20-20.svg", "sizes": "144x144" }]
+    }
+  ],
+  "description": "20-20-20 Rule"
+}
